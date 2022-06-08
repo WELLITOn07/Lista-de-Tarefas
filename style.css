@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/************LISTA DE ITENS*************/
+
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+/*ROOT*/
+:root {
+    /*PALETA*/
+    --cor-01: #9FD1F3;
+    --cor-02: #034585;
+    --cor-03: #03122791;
+    /*FONTS*/
+    --font--outfit: 'Outfit', sans-serif, 'Courier New', Courier, monospace;
+}
+/*RESET*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: larger;
+    color: var(--cor-01);
+}
+a:hover {
+    color: aliceblue;
+}
+abbr {
+    text-decoration: none;
+}
+/*BODY*/
+body {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: var(--cor-03);
+    font-family: var(--font--outfit);
+}
+/*HEADER*/
+header {
+    max-width: 610px;
+    margin: auto;
+    background-color: var(--cor-02);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+h1 {
+    color: var(--cor-01);
+}
+/*SECTION*/
+section {
+    display: grid;
+    justify-content: center;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background-color: var(--cor-03);
+}
+p.input {
+    display: block;
+    margin-left: 20%;
+}
+input#nomeDoitem {
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    background-color: #9fd1f3a9;
+    color: var(--cor-02);
+}
+/*TABLE*/
+table {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    overflow: auto;
+}
+table th {
+    color: var(--cor-01);
+}
+table td {
+    font-size: 1.2em;
+}
+table tr:nth-child(2n) {
+    color: var(--cor-01);
+    background-color: var(--cor-02);
+}
+table th, td {
+    padding: 5px;
+    border: 1px solid black;
+    width: 100px;
+}
+p {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;;
+}
+label {
+    color: var(--cor-01);
+    font-size: 1.4em;
+    margin-left: 20%;
+}
+button.btn-adicionar {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--cor-03);
+    color: var(--cor-01);
+}
+p#p-adcionar {
+    padding-top: 15px;
+}
+button.btn-adicionar:hover {
+    cursor: pointer;
+    background-color: var(--cor-02); 
+}
+button.apagar {
+    padding: 3px;
+    background-color: var(--cor-03);
+    color: var(--cor-01);
+}
+button.apagar:hover {
+    cursor: pointer;
+    background-color: var(--cor-02); 
+}
+/*FOOTER*/
+footer {
+    max-width: 620px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--cor-02);
+    border-radius: 0px 0px 10px 10px;
+    color: var(--cor-01);
+}
+footer > p#footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+}
+@media (max-width: 400px) {
+    table {
+        width: 300px;
+    }
+}

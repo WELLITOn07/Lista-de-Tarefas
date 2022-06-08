@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/48/Checklist-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>LISTA DE TAREFAS</h1></header>
+    <section>
+        <div class="adc-listas">
+            <label for="nomeDoitem">NOME DA TAREFAS</label>
+            <p class="input"><input type="text" placeholder="nome do item" id="nomeDoitem" name="teste"></p>
+            <!---------------------------------------->
+            <p id="p-adcionar"><abbr title="Adicionar uma tarefa"><button class="btn-adicionar">ADICIONAR</button></abbr></p>
+        </div>
+        <div class="tela-resultado">
+            <table>
+                <tbody class="tbody">
+                    <tr>
+                        <th id="th-nome" scope="colgroup" colspan="2">NOME</th>
+                        <th id="th-data" scope="colgroup">DATA</th>
+                        <th id="th-data" scope="colgroup">APAGAR</th>
+                    </tr>
+                    <!-- EXEMPLO --<tr class="td-itens">
+                        <td class="nome-item" colspan="2">TESTE1</td>
+                        -----------
+                        <td><button class="apagar">Apagar</button></td>-->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer><p id="footer">Criado por <abbr title="Visite meu Github"><a href="https://github.com/WELLITOn07">WELLITOn07</a></abbr>&copy;</p></footer>
+</body>
+<script src="js.js"></script>
+</html>
