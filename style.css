@@ -6,9 +6,9 @@
 /*ROOT*/
 :root {
     /*PALETA*/
-    --cor-01: #9FD1F3;
-    --cor-02: #034585;
-    --cor-03: #03122791;
+    --cor-01: #0d1b2a;
+    --cor-02: #161a1d;
+    --cor-03: #e5e5e5;
     /*FONTS*/
     --font--outfit: 'Outfit', sans-serif, 'Courier New', Courier, monospace;
 }
@@ -21,10 +21,10 @@ a {
     text-decoration: none;
     padding-left: 5px;
     font-size: larger;
-    color: var(--cor-01);
+    color: var(--cor-03);
 }
 a:hover {
-    color: aliceblue;
+    text-decoration: underline;
 }
 abbr {
     text-decoration: none;
@@ -33,7 +33,7 @@ abbr {
 body {
     box-sizing: border-box;
     padding: 10px;
-    background-color: var(--cor-03);
+    background-color: var(--cor-01);
     font-family: var(--font--outfit);
 }
 /*HEADER*/
@@ -44,9 +44,10 @@ header {
     text-align: center;
     padding: 5px;
     border-radius: 10px 10px 0px 0px;
+    border: 1px solid #161a1d;
 }
 h1 {
-    color: var(--cor-01);
+    color: var(--cor-03);
 }
 /*SECTION*/
 section {
@@ -57,6 +58,7 @@ section {
     padding: 10px;
     margin: auto;
     background-color: var(--cor-03);
+    border: 1px solid #161a1d;
 }
 p.input {
     display: block;
@@ -66,8 +68,9 @@ input#nomeDoitem {
     text-align: center;
     width: 200px;
     height: 20px;
-    background-color: #9fd1f3a9;
+    background-color: lightcyan;
     color: var(--cor-02);
+    font-weight: bold;
 }
 /*TABLE*/
 table {
@@ -87,7 +90,7 @@ table td {
     font-size: 1.2em;
 }
 table tr:nth-child(2n) {
-    color: var(--cor-01);
+    color: var(--cor-03);
     background-color: var(--cor-02);
 }
 table th, td {
@@ -105,27 +108,29 @@ label {
     font-size: 1.4em;
     margin-left: 20%;
 }
-button.btn-adicionar {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: var(--cor-03);
-    color: var(--cor-01);
-}
 p#p-adcionar {
     padding-top: 15px;
 }
+button.btn-adicionar {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--cor-02);
+    color: var(--cor-03);
+}
 button.btn-adicionar:hover {
     cursor: pointer;
-    background-color: var(--cor-02); 
+    background-color: var(--cor-03); 
+    color: var(--cor-02);
 }
 button.apagar {
     padding: 3px;
     background-color: var(--cor-03);
-    color: var(--cor-01);
+    color: var(--cor-02);
 }
 button.apagar:hover {
     cursor: pointer;
-    background-color: var(--cor-02); 
+    color: var(--cor-03);
+    background-color: #161a1d;
 }
 /*FOOTER*/
 footer {
@@ -134,7 +139,8 @@ footer {
     text-align: center;
     background-color: var(--cor-02);
     border-radius: 0px 0px 10px 10px;
-    color: var(--cor-01);
+    color: var(--cor-03);
+    border: 1px solid #161a1d;
 }
 footer > p#footer {
     display: flex;
