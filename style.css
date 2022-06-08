@@ -33,7 +33,7 @@ abbr {
 body {
     box-sizing: border-box;
     padding: 10px;
-    background-color: var(--cor-01);
+    background-color: #0d1b2ae0;
     font-family: var(--font--outfit);
 }
 /*HEADER*/
@@ -112,7 +112,7 @@ p#p-adcionar {
     padding-top: 15px;
 }
 button.btn-adicionar {
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
     background-color: var(--cor-02);
     color: var(--cor-03);
